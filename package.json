@@ -1,0 +1,24 @@
+{
+  "name": "twitchcommander",
+  "version": "1.0.0",
+  "description": "An application commanding an emulator by receiveing key from twitch",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "preinstall-create":"MKDIR SRC\\Emulator\\",
+    "preinstall-cUrl" : "curl -LO https://bgb.bircd.org/bgb.zip",
+    "preinstall-CP" : "move bgb.zip .\\SRC\\Emulator\\bgb.zip",
+    "preinstall-unzip" : "CD SRC\\Emulator\\ && tar -xf bgb.zip && del /f bgb.zip &&CD ..\\..",
+    "preinstall": "npm run preinstall-create && npm run preinstall-cUrl && npm run preinstall-CP && npm run preinstall-unzip"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LewandowskiAnthony/TwitchCommander.git"
+  },
+  "author": "a.lewandowski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LewandowskiAnthony/TwitchCommander/issues"
+  },
+  "homepage": "https://github.com/LewandowskiAnthony/TwitchCommander#readme"
+}
