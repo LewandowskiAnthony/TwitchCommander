@@ -2,35 +2,42 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v3.1": {
-      "InputSimulator/1.0.4": {
+      "H.InputSimulator/1.1.0": {
         "type": "package",
         "compile": {
-          "lib/net20/WindowsInput.dll": {}
+          "lib/netstandard2.0/H.InputSimulator.dll": {}
         },
         "runtime": {
-          "lib/net20/WindowsInput.dll": {}
+          "lib/netstandard2.0/H.InputSimulator.dll": {}
         }
       }
     }
   },
   "libraries": {
-    "InputSimulator/1.0.4": {
-      "sha512": "D0LvRCPQMX6/FJHBjng+RO+wRDuHTJrfo7IAc7rmkPvRqchdVGJWg3y70peOtDy3OLNK+HSOwVkH4GiuLnkKgA==",
+    "H.InputSimulator/1.1.0": {
+      "sha512": "M+wXdo4AgsSJv6+cOAE6nEkl6M4newxc0fC4e54NeHJW0hbtNznAxAuKDilwTrX4US4NKWrLZxIR4JGSvjid0Q==",
       "type": "package",
-      "path": "inputsimulator/1.0.4",
+      "path": "h.inputsimulator/1.1.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "inputsimulator.1.0.4.nupkg.sha512",
-        "inputsimulator.nuspec",
-        "lib/net20/WindowsInput.dll",
-        "lib/net20/WindowsInput.xml"
+        "h.inputsimulator.1.1.0.nupkg.sha512",
+        "h.inputsimulator.nuspec",
+        "lib/net40/H.InputSimulator.dll",
+        "lib/net40/H.InputSimulator.xml",
+        "lib/net45/H.InputSimulator.dll",
+        "lib/net45/H.InputSimulator.xml",
+        "lib/netstandard1.1/H.InputSimulator.dll",
+        "lib/netstandard1.1/H.InputSimulator.xml",
+        "lib/netstandard2.0/H.InputSimulator.dll",
+        "lib/netstandard2.0/H.InputSimulator.xml",
+        "nuget_icon.png"
       ]
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "InputSimulator >= 1.0.4"
+      "H.InputSimulator >= 1.1.0"
     ]
   },
   "packageFolders": {
@@ -40,11 +47,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\lewan\\source\\repos\\TwitchMessagesCommander\\TwitchMessagesCommander.csproj",
+      "projectUniqueName": "C:\\Users\\lewan\\Documents\\TwitchCommander\\TwitchMessagesCommander\\TwitchMessagesCommander.csproj",
       "projectName": "TwitchMessagesCommander",
-      "projectPath": "C:\\Users\\lewan\\source\\repos\\TwitchMessagesCommander\\TwitchMessagesCommander.csproj",
+      "projectPath": "C:\\Users\\lewan\\Documents\\TwitchCommander\\TwitchMessagesCommander\\TwitchMessagesCommander.csproj",
       "packagesPath": "C:\\Users\\lewan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lewan\\source\\repos\\TwitchMessagesCommander\\obj\\",
+      "outputPath": "C:\\Users\\lewan\\Documents\\TwitchCommander\\TwitchMessagesCommander\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -77,9 +84,9 @@
       "netcoreapp3.1": {
         "targetAlias": "netcoreapp3.1",
         "dependencies": {
-          "InputSimulator": {
+          "H.InputSimulator": {
             "target": "Package",
-            "version": "[1.0.4, )"
+            "version": "[1.1.0, )"
           }
         },
         "imports": [
@@ -100,17 +107,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Le package 'InputSimulator 1.0.4' a été restauré en utilisant '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' au lieu du framework cible du projet '.NETCoreApp,Version=v3.1'. Ce package n'est peut-être pas totalement compatible avec votre projet.",
-      "libraryId": "InputSimulator",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    }
-  ]
+  }
 }

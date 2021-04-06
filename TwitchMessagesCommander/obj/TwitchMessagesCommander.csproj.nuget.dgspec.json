@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lewan\\source\\repos\\TwitchMessagesCommander\\TwitchMessagesCommander.csproj": {}
+    "C:\\Users\\lewan\\Documents\\TwitchCommander\\TwitchMessagesCommander\\TwitchMessagesCommander.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lewan\\source\\repos\\TwitchMessagesCommander\\TwitchMessagesCommander.csproj": {
+    "C:\\Users\\lewan\\Documents\\TwitchCommander\\TwitchMessagesCommander\\TwitchMessagesCommander.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lewan\\source\\repos\\TwitchMessagesCommander\\TwitchMessagesCommander.csproj",
+        "projectUniqueName": "C:\\Users\\lewan\\Documents\\TwitchCommander\\TwitchMessagesCommander\\TwitchMessagesCommander.csproj",
         "projectName": "TwitchMessagesCommander",
-        "projectPath": "C:\\Users\\lewan\\source\\repos\\TwitchMessagesCommander\\TwitchMessagesCommander.csproj",
+        "projectPath": "C:\\Users\\lewan\\Documents\\TwitchCommander\\TwitchMessagesCommander\\TwitchMessagesCommander.csproj",
         "packagesPath": "C:\\Users\\lewan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lewan\\source\\repos\\TwitchMessagesCommander\\obj\\",
+        "outputPath": "C:\\Users\\lewan\\Documents\\TwitchCommander\\TwitchMessagesCommander\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -44,9 +44,9 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
-            "InputSimulator": {
+            "H.InputSimulator": {
               "target": "Package",
-              "version": "[1.0.4, )"
+              "version": "[1.1.0, )"
             }
           },
           "imports": [

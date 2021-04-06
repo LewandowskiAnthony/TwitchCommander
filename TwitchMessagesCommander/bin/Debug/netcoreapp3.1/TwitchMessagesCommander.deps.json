@@ -8,17 +8,17 @@
     ".NETCoreApp,Version=v3.1": {
       "TwitchMessagesCommander/1.0.0": {
         "dependencies": {
-          "InputSimulator": "1.0.4"
+          "H.InputSimulator": "1.1.0"
         },
         "runtime": {
           "TwitchMessagesCommander.dll": {}
         }
       },
-      "InputSimulator/1.0.4": {
+      "H.InputSimulator/1.1.0": {
         "runtime": {
-          "lib/net20/WindowsInput.dll": {
-            "assemblyVersion": "1.0.4.0",
-            "fileVersion": "1.0.4.0"
+          "lib/netstandard2.0/H.InputSimulator.dll": {
+            "assemblyVersion": "1.1.0.0",
+            "fileVersion": "1.1.0.0"
           }
         }
       }
@@ -30,12 +30,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "InputSimulator/1.0.4": {
+    "H.InputSimulator/1.1.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-D0LvRCPQMX6/FJHBjng+RO+wRDuHTJrfo7IAc7rmkPvRqchdVGJWg3y70peOtDy3OLNK+HSOwVkH4GiuLnkKgA==",
-      "path": "inputsimulator/1.0.4",
-      "hashPath": "inputsimulator.1.0.4.nupkg.sha512"
+      "sha512": "sha512-M+wXdo4AgsSJv6+cOAE6nEkl6M4newxc0fC4e54NeHJW0hbtNznAxAuKDilwTrX4US4NKWrLZxIR4JGSvjid0Q==",
+      "path": "h.inputsimulator/1.1.0",
+      "hashPath": "h.inputsimulator.1.1.0.nupkg.sha512"
     }
   }
 }
