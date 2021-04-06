@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "dgSpecHash": "sMOo58QfwvBAsQmoI8ZV86eGw4w8T5I/MFQB1Rgieh6v5bKLp9NLXEX04G3NLwLCNCOAmjDw7io1zhWqaZv1hw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\lewan\\source\\repos\\TwitchMessagesCommander\\TwitchMessagesCommander.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\lewan\\.nuget\\packages\\inputsimulator\\1.0.4\\inputsimulator.1.0.4.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Le package 'InputSimulator 1.0.4' a été restauré en utilisant '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' au lieu du framework cible du projet '.NETCoreApp,Version=v3.1'. Ce package n'est peut-être pas totalement compatible avec votre projet.",
+      "libraryId": "InputSimulator",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    }
+  ]
+}
