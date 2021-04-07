@@ -6,7 +6,7 @@ services:
       container_name: analyticDB
       restart: always
       volumes:
-      - ./mysql:/var/lib/mysql
+       - ./SRC/DockerSubSystems/mysql:/var/lib/mysql
       ports:
        - '6603:3306'
       environment:
