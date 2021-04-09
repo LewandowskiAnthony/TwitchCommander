@@ -16,9 +16,23 @@ services:
       depends_on:
        - db
       image: phpmyadmin/phpmyadmin
+      restart: always
       container_name: phpmyadmin
       restart: always
       ports:
        - '8080:80'
       environment:
         PMA_HOST: db
+
+   node-red:
+      depends_on:
+         - db
+      image: nodered/node-red:latest
+      restart: always
+      environment:
+         - TZ=Europe/Amsterdam
+      ports:
+         - "1880:1880"
+      volumes:
+         - ./SRC/DockerSubSystems/node-red-data:/data
+
