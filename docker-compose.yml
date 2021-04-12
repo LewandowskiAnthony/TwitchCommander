@@ -10,7 +10,7 @@ services:
        - ./SRC/backups/commandsSent.sql:/data/application/commandsSent.sql
       ports:
        - '6603:3306'
-       command: --init-file /data/application/commandsSent.sql
+      command: --init-file /data/application/commandsSent.sql
       environment:
         MYSQL_ROOT_PASSWORD: admin
       networks:
