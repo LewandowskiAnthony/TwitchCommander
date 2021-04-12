@@ -14,7 +14,8 @@
     "preinstall-cUrl" : "curl -LO %npm_package_config_bcbEmulator% && curl -L -o flow.json %npm_package_config_nodeRedBackup% && curl -L -o commandsSent.sql %npm_package_config_sqlBackup% && curl -L -o rom.gb %npm_package_config_romGB%",
     "preinstall-CP" : "move bgb.zip .\\SRC\\Emulator\\bgb.zip && move flow.json .\\SRC\\backups\\flow.json && move commandsSent.sql .\\SRC\\backups\\commandsSent.sql",
     "preinstall-unzip" : "CD SRC\\Emulator\\ && tar -xf bgb.zip && del /f bgb.zip &&CD ..\\..",
-    "preinstall": "npm run preinstall-create && npm run preinstall-cUrl && npm run preinstall-CP && npm run preinstall-unzip"
+    "preinstall-docker" : "docker compose up -d",
+    "preinstall": "npm run preinstall-create && npm run preinstall-cUrl && npm run preinstall-CP && npm run preinstall-unzip && npm run preinstall-docker"
   },
   "repository": {
     "type": "git",
