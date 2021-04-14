@@ -8,12 +8,13 @@
     "sqlBackup": "https://www.dropbox.com/s/4xlvv785obdfyxd/commandsSent.sql?dl=0",
     "nodeRedBackup": "https://www.dropbox.com/s/gh3zwhxw7zo8oau/flows.json?dl=0",
     "bcbEmulator": "https://bgb.bircd.org/bgb.zip",
+    "bcbConfig": "https://www.dropbox.com/s/cicn35r2g17lb06/bgb.ini?dl=0",
     "gitRepo": "https://github.com/LewandowskiAnthony/TwitchCommandsReader.git"
   },
   "scripts": {
     "preinstall-create": "MKDIR SRC\\Emulator\\ && MKDIR SRC\\backups\\",
-    "preinstall-cUrl": "curl -LO %npm_package_config_bcbEmulator% && curl -L -o flow.json %npm_package_config_nodeRedBackup% && curl -L -o commandsSent.sql %npm_package_config_sqlBackup% && curl -L -o rom.gb %npm_package_config_romGB%",
-    "preinstall-CP": "move bgb.zip .\\SRC\\Emulator\\bgb.zip && move flow.json .\\SRC\\backups\\flow.json && move rom.gb .\\SRC\\Emulator\\rom.gb && move commandsSent.sql .\\SRC\\backups\\commandsSent.sql",
+    "preinstall-cUrl": "curl -LO %npm_package_config_bcbEmulator% && curl -L -o flow.json %npm_package_config_nodeRedBackup% && curl -L -o commandsSent.sql %npm_package_config_sqlBackup% && curl -L -o rom.gb %npm_package_config_romGB% && curl -L -o bgb.ini %npm_package_config_bcbConfig%",
+    "preinstall-CP": "move bgb.zip .\\SRC\\Emulator\\bgb.zip && move flow.json .\\SRC\\backups\\flow.json && move rom.gb .\\SRC\\Emulator\\rom.gb && move commandsSent.sql .\\SRC\\backups\\commandsSent.sql && move bgb.ini .\\SRC\\Emulator\\bgb.ini",
     "preinstall-unzip": "CD SRC\\Emulator\\ && tar -xf bgb.zip && del /f bgb.zip &&CD ..\\..",
     "preinstall-docker": "MKDIR SRC\\DockerSubSystems\\mysql && MKDIR SRC\\DockerSubSystems\\node-red-data && docker compose up -d",
     "preinstall-javascriptclone": "git clone %npm_package_config_gitRepo% .\\SRC\\JAVASCRIPT\\ && CD .\\SRC\\JAVASCRIPT\\ && git checkout develop && npm install && cd ..\\..",
