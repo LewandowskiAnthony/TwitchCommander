@@ -18,7 +18,12 @@
     "preinstall-docker": "MKDIR SRC\\DockerSubSystems\\mysql && MKDIR SRC\\DockerSubSystems\\node-red-data && docker compose up -d",
     "preinstall-javascriptclone": "git clone %npm_package_config_gitRepo% .\\SRC\\JAVASCRIPT\\ && CD .\\SRC\\JAVASCRIPT\\ && git checkout develop && npm install && cd ..\\..",
     "preinstall": "npm run preinstall-create && npm run preinstall-cUrl && npm run preinstall-CP && npm run preinstall-unzip && npm run preinstall-docker && npm run preinstall-javascriptclone",
-    "prestart-node":"node SRC\\JAVASCRIPT\\readTwitchChat.js"
+    "prestart-bgb":"START /B SRC\\Emulator\\bgb.exe SRC\\Emulator\\rom.gb",
+    "prestart-build-dotnet":"dotnet build TwitchMessagesCommander\\TwitchMessagesCommander.sln",
+    "prestart-run-dotnet":"START /B TwitchMessagesCommander\\bin\\Debug\\netcoreapp3.1\\TwitchMessagesCommander.exe",
+    "prestart-dotnet":"npm run prestart-build-dotnet && npm run prestart-run-dotnet",
+    "prestart-node":"START /B node SRC\\JAVASCRIPT\\readTwitchChat.js",
+    "start-project":"npm run prestart-bgb && npm run prestart-dotnet && npm run prestart-node"
   },
   "repository": {
     "type": "git",
