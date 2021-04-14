@@ -16,8 +16,9 @@
     "preinstall-CP": "move bgb.zip .\\SRC\\Emulator\\bgb.zip && move flow.json .\\SRC\\backups\\flow.json && move rom.gb .\\SRC\\Emulator\\rom.gb && move commandsSent.sql .\\SRC\\backups\\commandsSent.sql",
     "preinstall-unzip": "CD SRC\\Emulator\\ && tar -xf bgb.zip && del /f bgb.zip &&CD ..\\..",
     "preinstall-docker": "MKDIR SRC\\DockerSubSystems\\mysql && MKDIR SRC\\DockerSubSystems\\node-red-data && docker compose up -d",
-    "preinstall-javascriptclone": "git clone %npm_package_config_gitRepo% .\\SRC\\JAVASCRIPT\\ && CD .\\SRC\\JAVASCRIPT\\ && git checkout develop && cd ..\\..",
-    "preinstall": "npm run preinstall-create && npm run preinstall-cUrl && npm run preinstall-CP && npm run preinstall-unzip && npm run preinstall-docker && npm run preinstall-javascriptclone"
+    "preinstall-javascriptclone": "git clone %npm_package_config_gitRepo% .\\SRC\\JAVASCRIPT\\ && CD .\\SRC\\JAVASCRIPT\\ && git checkout develop && npm install && cd ..\\..",
+    "preinstall": "npm run preinstall-create && npm run preinstall-cUrl && npm run preinstall-CP && npm run preinstall-unzip && npm run preinstall-docker && npm run preinstall-javascriptclone",
+    "prestart-node":"node SRC\\JAVASCRIPT\\readTwitchChat.js"
   },
   "repository": {
     "type": "git",
